@@ -1,21 +1,20 @@
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: Tetris-deployment
-  labels:
-    app: Tetris
+  name: tetris
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: Tetris
+      app: tetris
   template:
     metadata:
       labels:
-        app: Tetris
+        app: tetris
     spec:
       containers:
-      - name: Tetris
+      - name: tetris
         image: rabi4450/tetrisv1:latest
         ports:
-        - containerPort: 3000
+        - containerPort: 3000   # Use port 3000
