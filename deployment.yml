@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: Tetris
-        image:
+        image: rabi4450/tetrisv1
         ports:
         - containerPort: 3000
